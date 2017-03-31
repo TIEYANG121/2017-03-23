@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input class="text" type="text">
+	<input class="sign" type="text">
+	<input class="text1" type="text">
+	
+	<button class="btn">按钮</button>
+	<script>
+		var txt = document.querySelector('.text');
+		var sign = document.querySelector('.sign');
+		var txt1 = document.querySelector('.text1');
+		var btn = document.querySelector('.btn');
+		
+		btn.onclick = function(){
+			var number =Number(txt.value);
+			var number1 =Number (txt1.value);
+			if(sign.value === '+'){
+					alert(number + number1);
+			}
+			if(sign.value === '-'){
+					alert(number - number1);
+			}
+			if(sign.value === '*'){
+					alert(number * number1);
+			}
+			if(sign.value === '/'){
+					alert(number / number1);
+			}
+		console.log(alert);
+		}
+		
+		
+	</script>
+</body>
+</html>
